@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОтправитьЗапрос" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтправитьЗапрос</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьЗапросРасширеннаяПодсказка" id="24"/>
+			</Button>
+			<Button name="ФормаgetLists" id="18">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.getLists</CommandName>
+				<ExtendedTooltip name="ФормаgetListsРасширеннаяПодсказка" id="19"/>
+			</Button>
+			<Button name="ФормаcreateList" id="28">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.createList</CommandName>
+				<ExtendedTooltip name="ФормаcreateListРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="ФормаОбновитьДанныеСпискаРассылки" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьДанныеСпискаРассылки</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьДанныеСпискаРассылкиРасширеннаяПодсказка" id="34"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ГруппаРассылки" id="25">
+			<DataPath>ГруппаРассылки</DataPath>
+			<ContextMenu name="ГруппаРассылкиКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ГруппаРассылкиРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="КодСпискаРассылки" id="30">
+			<DataPath>КодСпискаРассылки</DataPath>
+			<ContextMenu name="КодСпискаРассылкиКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="КодСпискаРассылкиРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="АдресСервера" id="1">
+			<DataPath>АдресСервера</DataPath>
+			<ContextMenu name="АдресСервераКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="КлючАПИ" id="7">
+			<DataPath>КлючАПИ</DataPath>
+			<ContextMenu name="КлючАПИКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлючАПИРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИмяСкрипта" id="20">
+			<DataPath>ИмяСкрипта</DataPath>
+			<ContextMenu name="ИмяСкриптаКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ИмяСкриптаРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="10">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="СтрокаЗапросаНаСервер" id="12">
+					<DataPath>Объект.СтрокаЗапросаНаСервер</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="СтрокаЗапросаНаСерверКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СтрокаЗапросаНаСерверРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="строкаОтветаСервера" id="15">
+					<DataPath>Объект.СтрокаОтветаСервера</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="строкаОтветаСервераКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="строкаОтветаСервераРасширеннаяПодсказка" id="17"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РаботаСUnisender</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АдресСервера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючАПИ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ АПИ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяСкрипта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя скрипта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппаРассылки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГруппыРассылокИОповещений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодСпискаРассылки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код списка рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="getLists" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get lists</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get lists</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>getLists</Action>
+		</Command>
+		<Command name="ОтправитьЗапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьЗапрос</Action>
+		</Command>
+		<Command name="createList" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create list</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create list</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>createList</Action>
+		</Command>
+		<Command name="ОбновитьДанныеСпискаРассылки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные списка рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные списка рассылки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДанныеСпискаРассылки</Action>
+		</Command>
+	</Commands>
+</Form>
