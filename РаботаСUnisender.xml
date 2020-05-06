@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
-	<ExternalDataProcessor uuid="82e043cb-f1ce-486f-b469-985b9a13e4dd">
+	<ExternalDataProcessor uuid="8705dc21-a5cf-426d-a9dc-e55bf1a07958">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>31f054c2-042b-4e62-b9df-a1102964ee46</xr:ObjectId>
+				<xr:ObjectId>7114e7de-07e5-4366-8fe1-c356a223e9fb</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.РаботаСUnisender" category="Object">
-				<xr:TypeId>eee350cd-a3b7-4c22-9f6f-521b2e49d19d</xr:TypeId>
-				<xr:ValueId>e4af070a-6b99-4923-aa2a-31bcde137bdc</xr:ValueId>
+				<xr:TypeId>2625db37-b48a-4322-89ac-2c6683eec6e9</xr:TypeId>
+				<xr:ValueId>a7c32247-c592-4754-aa5b-1fd5768d27c0</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -24,7 +24,7 @@
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="dd68625c-557d-44fa-af39-85e723cf7a69">
+			<Attribute uuid="ec4dbbd7-de38-42ba-a676-8ed2892073ca">
 				<Properties>
 					<Name>АдресСервера</Name>
 					<Synonym>
@@ -62,7 +62,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="2dd07987-e1b3-4d8b-bc91-3a37cf514702">
+			<Attribute uuid="86fc6c21-b398-41f1-8871-12d7d37a27e2">
 				<Properties>
 					<Name>КлючАПИ</Name>
 					<Synonym>
@@ -100,7 +100,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="079cdd28-37b4-4c5e-b677-6abb43c4695b">
+			<Attribute uuid="54ccb3c7-380d-4ee1-a851-cf63c639748c">
 				<Properties>
 					<Name>СтрокаЗапросаНаСервер</Name>
 					<Synonym>
@@ -113,7 +113,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>500</v8:Length>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -138,7 +138,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="1f1ab122-f16c-421a-a1cb-951672086322">
+			<Attribute uuid="12aa15e8-dd87-453f-a3f8-5bac42ef35b1">
 				<Properties>
 					<Name>СтрокаОтветаСервера</Name>
 					<Synonym>
@@ -151,7 +151,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>500</v8:Length>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
